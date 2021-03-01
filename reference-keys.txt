@@ -1,6 +1,8 @@
 varia
 entropy
 information-entropy---shannon
+complexity
+wicked-problems
 about
 links
 news
