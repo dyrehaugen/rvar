@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Entropy | Varia</title>
+  <meta name="description" content="2 Entropy | Varia" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Entropy | Varia" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="dyrehaugen/rvar" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Entropy | Varia" />
+  
+  
+  
+
+<meta name="author" content="Dyrehaugen Web Notebook" />
+
+
+<meta name="date" content="2021-02-08" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="about.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Varia</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Varia</a></li>
+<li class="chapter" data-level="2" data-path="entropy.html"><a href="entropy.html"><i class="fa fa-check"></i><b>2</b> Entropy</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="entropy.html"><a href="entropy.html#information-entropy---shannon"><i class="fa fa-check"></i><b>2.1</b> Information Entropy - Shannon</a></li>
+</ul></li>
+<li class="part"><span><b>I Appendices</b></span></li>
+<li class="appendix"><span><b>Appendices</b></span></li>
+<li class="chapter" data-level="A" data-path="about.html"><a href="about.html"><i class="fa fa-check"></i><b>A</b> About</a></li>
+<li class="chapter" data-level="B" data-path="links.html"><a href="links.html"><i class="fa fa-check"></i><b>B</b> Links</a></li>
+<li class="chapter" data-level="C" data-path="news.html"><a href="news.html"><i class="fa fa-check"></i><b>C</b> NEWS</a>
+<ul>
+<li class="chapter" data-level="C.1" data-path="news.html"><a href="news.html#climate-finance-shadow-report-2020"><i class="fa fa-check"></i><b>C.1</b> 210102 Climate Finance Shadow Report 2020</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/dyrehaugen/rvar" target="blank">On Github</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Varia</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="entropy" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Entropy</h1>
+<div id="information-entropy---shannon" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Information Entropy - Shannon</h2>
+<p>In a single groundbreaking paper, he laid the foundation for the entire communication infrastructure underlying the modern information age.</p>
+<p>The heart of his theory is a simple but very general model of communication: A transmitter encodes information into a signal, which is corrupted by noise and then decoded by the receiver. Despite its simplicity, Shannon’s model incorporates two key insights: isolating the information and noise sources from the communication system to be designed, and modeling both of these sources probabilistically. He imagined the information source generating one of many possible messages to communicate, each of which had a certain probability. The probabilistic noise added further randomness for the receiver to disentangle.</p>
+<p>Before Shannon, the problem of communication was primarily viewed as a deterministic signal-reconstruction problem: how to transform a received signal, distorted by the physical medium, to reconstruct the original as accurately as possible. Shannon’s genius lay in his observation that the key to communication is uncertainty.
+This single observation shifted the communication problem from the physical to the abstract, allowing Shannon to model the uncertainty using probability. This came as a total shock to the communication engineers of the day.</p>
+<p>First, Shannon came up with a formula for the minimum number of bits per second to represent the information, a number he called its entropy rate, H. This number quantifies the uncertainty involved in determining which message the source will generate. The lower the entropy rate, the less the uncertainty, and thus the easier it is to compress the message into something shorter.</p>
+<p>For example, texting at the rate of 100 English letters per minute means sending one out of 26100 possible messages every minute, each represented by a sequence of 100 letters. One could encode all these possibilities into 470 bits, since 2470 ≈ 26100. If the sequences were equally likely, then Shannon’s formula would say that the entropy rate is indeed 470 bits per minute. In reality, some sequences are much more likely than others, and the entropy rate is much lower, allowing for greater compression.</p>
+<p>Second, he provided a formula for the maximum number of bits per second that can be reliably communicated in the face of noise, which he called the system’s capacity, C. This is the maximum rate at which the receiver can resolve the message’s uncertainty, effectively making it the speed limit for communication.</p>
+<p>Finally, he showed that reliable communication of the information from the source in the face of noise is possible if and only if H &lt; C. Thus, information is like water: If the flow rate is less than the capacity of the pipe, then the stream gets through reliably.</p>
+<p>His theorems led to some counterintuitive conclusions. Suppose you are talking in a very noisy place. What’s the best way of making sure your message gets through? Maybe repeating it many times? That’s certainly anyone’s first instinct in a loud restaurant, but it turns out that’s not very efficient. Sure, the more times you repeat yourself, the more reliable the communication is. But you’ve sacrificed speed for reliability. Shannon showed us we can do far better. Repeating a message is an example of using a code to transmit a message, and by using different and more sophisticated codes, one can communicate fast — all the way up to the speed limit, C — while maintaining any given degree of reliability.</p>
+<p>Another unexpected conclusion stemming from Shannon’s theory is that whatever the nature of the information — be it a Shakespeare sonnet, a recording of Beethoven’s Fifth Symphony or a Kurosawa movie — it is always most efficient to encode it into bits before transmitting it. So in a radio system, for example, even though both the initial sound and the electromagnetic signal sent over the air are analog wave forms, Shannon’s theorems imply that it is optimal to first digitize the sound wave into bits, and then map those bits into the electromagnetic wave. This surprising result is a cornerstone of the modern digital information age, where the bit reigns supreme as the universal currency of information.</p>
+<p>Shannon’s general theory of communication is so natural that it’s as if he discovered the universe’s laws of communication, rather than inventing them. His theory is as fundamental as the physical laws of nature. In that sense, he was a scientist.</p>
+<p>Shannon invented new mathematics to describe the laws of communication. He introduced new ideas, like the entropy rate of a probabilistic model, which have been applied in far-ranging branches of mathematics such as ergodic theory, the study of long-term behavior of dynamical systems. In that sense, Shannon was a mathematician.</p>
+<p>Shannon’s theory has now become the standard framework underlying all modern-day communication systems: optical, underwater, even interplanetary.</p>
+<p>Shannon figured out the foundation for all this more than 70 years ago. How did he do it? By focusing relentlessly on the essential feature of a problem while ignoring all other aspects.</p>
+<p><a href="https://www.quantamagazine.org/how-claude-shannons-information-theory-invented-the-future-20201222/">Shannon (Quanta Magazine)</a></p>
+
+</div>
+</div>
+
+
+
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="about.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/dyrehaugen/rvar/edit/master/201-entropy.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["rvar.pdf", "rvar.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

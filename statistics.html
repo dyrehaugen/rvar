@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Statistics | Varia</title>
+  <meta name="description" content="2 Statistics | Varia" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Statistics | Varia" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  <meta name="github-repo" content="dyrehaugen/rvar" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Statistics | Varia" />
+  
+  
+  
+
+<meta name="author" content="Dyrehaugen Web Notebook" />
+
+
+<meta name="date" content="2021-02-08" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="entropy.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Varia</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Varia</a></li>
+<li class="chapter" data-level="2" data-path="statistics.html"><a href="statistics.html"><i class="fa fa-check"></i><b>2</b> Statistics</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="statistics.html"><a href="statistics.html#fat-tails"><i class="fa fa-check"></i><b>2.1</b> Fat Tails</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="statistics.html"><a href="statistics.html#extremes"><i class="fa fa-check"></i><b>2.1.1</b> Extremes</a></li>
+<li class="chapter" data-level="2.1.2" data-path="statistics.html"><a href="statistics.html#catastrophe-principle"><i class="fa fa-check"></i><b>2.1.2</b> Catastrophe Principle</a></li>
+<li class="chapter" data-level="2.1.3" data-path="statistics.html"><a href="statistics.html#statistical-consequences-of-fat-tails"><i class="fa fa-check"></i><b>2.1.3</b> Statistical Consequences of Fat Tails</a></li>
+<li class="chapter" data-level="2.1.4" data-path="statistics.html"><a href="statistics.html#pandemic-risk-management"><i class="fa fa-check"></i><b>2.1.4</b> Pandemic Risk Management</a></li>
+<li class="chapter" data-level="2.1.5" data-path="statistics.html"><a href="statistics.html#danish-mask-study"><i class="fa fa-check"></i><b>2.1.5</b> Danish Mask Study</a></li>
+<li class="chapter" data-level="2.1.6" data-path="statistics.html"><a href="statistics.html#quarantine-fatigue-thins-fat-tailed-impacts"><i class="fa fa-check"></i><b>2.1.6</b> Quarantine fatigue thins fat-tailed impacts</a></li>
+<li class="chapter" data-level="2.1.7" data-path="statistics.html"><a href="statistics.html#herd-immunity-impossible-with-new-mutants"><i class="fa fa-check"></i><b>2.1.7</b> Herd Immunity impossible with new Mutants</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="entropy.html"><a href="entropy.html"><i class="fa fa-check"></i><b>3</b> Entropy</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="entropy.html"><a href="entropy.html#information-entropy---shannon"><i class="fa fa-check"></i><b>3.1</b> Information Entropy - Shannon</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="economics.html"><a href="economics.html"><i class="fa fa-check"></i><b>4</b> Economics</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="economics.html"><a href="economics.html#behavioral-economics"><i class="fa fa-check"></i><b>4.1</b> Behavioral Economics</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="economics.html"><a href="economics.html#fooled-by-randomness"><i class="fa fa-check"></i><b>4.1.1</b> Fooled by randomness</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="economics.html"><a href="economics.html#climate-finance"><i class="fa fa-check"></i><b>4.2</b> Climate Finance</a></li>
+<li class="chapter" data-level="4.3" data-path="economics.html"><a href="economics.html#decoupling"><i class="fa fa-check"></i><b>4.3</b> Decoupling</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="ergodicity.html"><a href="ergodicity.html"><i class="fa fa-check"></i><b>5</b> Ergodicity</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="ergodicity.html"><a href="ergodicity.html#almost-surely"><i class="fa fa-check"></i><b>5.1</b> Almost surely</a></li>
+<li class="chapter" data-level="5.2" data-path="ergodicity.html"><a href="ergodicity.html#kelly-criterion"><i class="fa fa-check"></i><b>5.2</b> Kelly Criterion</a></li>
+</ul></li>
+<li class="part"><span><b>I Appendices</b></span></li>
+<li class="appendix"><span><b>Appendices</b></span></li>
+<li class="chapter" data-level="A" data-path="about.html"><a href="about.html"><i class="fa fa-check"></i><b>A</b> About</a></li>
+<li class="chapter" data-level="B" data-path="links.html"><a href="links.html"><i class="fa fa-check"></i><b>B</b> Links</a></li>
+<li class="chapter" data-level="C" data-path="news.html"><a href="news.html"><i class="fa fa-check"></i><b>C</b> NEWS</a>
+<ul>
+<li class="chapter" data-level="C.1" data-path="news.html"><a href="news.html#climate-finance-shadow-report-2020"><i class="fa fa-check"></i><b>C.1</b> 210102 Climate Finance Shadow Report 2020</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/dyrehaugen/rvar" target="blank">On Github</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Varia</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="statistics" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Statistics</h1>
+<p><a href="/pdf/statistics.pdf">(pdf)</a></p>
+<pre><code>Statistics
+Fat Tails
+    Extremes      
+        Catastrophe Principle  
+    Statistical Consequences of Fat Tails  
+    Power Law Distributions  
+        Pareto Distribution  
+    Pandemic Risk Management</code></pre>
+<p>Science uses statistics &amp;, as per Popper, doesn’t really “accept,”
+just fails to reject at some significance.
+It’s fundamentally disconfirmatory.
+Stat. “evidence” is inherently probabilistic and
+cannot be “degenerate” (i.e. provide certainties).
+(Taleb)</p>
+<div id="fat-tails" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Fat Tails</h2>
+<div id="extremes" class="section level3" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Extremes</h3>
+<p>The field of Extreme Value Theory focuses on tail properties,
+not the mean or statistical inference.</p>
+<p>It is vastly more effective
+to focus on being insulated from the harm of random events
+than try to figure them out in the required details
+(the inferential errors under fat tails are huge).
+So it is more solid, much wiser, more ethical, and more effective to focus on
+detection heuristics and policies rather than fabricate statistical properties.</p>
+</div>
+<div id="catastrophe-principle" class="section level3" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Catastrophe Principle</h3>
+<p><em>Memo Taleb (DarwinCollege):</em></p>
+<p>Where a Pareto distribution
+prevails (among many), and randomly select two people with
+combined wealth of £36 million. The most likely combination
+is not £18 million and £18 million. It is approximately
+£35,999,000 and £1,000. This highlights the crisp distinction
+between the two domains; for the class of subexponential
+distributions, <em>ruin is more likely to come from a single extreme
+event than from a series of bad episodes</em>. This logic underpins
+classical risk theory as outlined by Lundberg early in the 20 th
+Century and formalized by Cramer, but forgotten by
+economists in recent times. This indicates that insurance can
+only work in Medocristan; you should never write an uncapped
+insurance contract if there is a risk of catastrophe. The point
+is called the catastrophe principle.</p>
+<p>Cramer showed insurance could not work outside
+what he called the Cramer condition, which excludes possible
+ruin from single shocks.</p>
+<p>With fat tail distributions, extreme events
+away from the centre of the distribution play a very large
+role. Black swans are not more frequent, they are more
+consequential. The fattest tail distribution has just one very
+large extreme deviation, rather than many departures form the
+norm.</p>
+<p>There are three types of fat tails based on mathematical properties.</p>
+<p>First there are entry level fat tails.
+This is any distribution with fatter tails than the Gaussian
+i.e. with more observations within one sigma and with
+kurtosis (a function of the fourth central moment) higher than three.</p>
+<p>Second, there are subexponential distributions.</p>
+<p><em>LogNormal:</em></p>
+<p>The subexponential class includes the lognormal, which is one
+of the strangest things on earth because sometimes it cheats
+and moves up to the top of the diagram. At low variance, it is
+thin-tailed, at high variance, it behaves like the very fat tailed.
+in-tailed, at high variance, it behaves like the very fat tailed.</p>
+<p>Membership in the subexponential class satisfies the Cramer
+condition of possibility of insurance (losses are more likely to
+come from many events than a single one)
+Technically it means that the expectation of
+the exponential of the random variable exists.</p>
+<p>Third, what is called by a variety of names, the power law, or slowly
+varying class, or “Pareto tails” class correspond to real fat tails.</p>
+<p>The traditional statisticians approach to fat tails has been
+to assume a different distribution but keep doing business as
+usual, using same metrics, tests, and statements of significance.
+But this is not how it really works and they fall into logical
+inconsistencies.</p>
+<p>Once we are outsaide the zone for which statistical techniques were designed,
+things no longer work as planned.
+Here are some consequences</p>
+<ol style="list-style-type: decimal">
+<li><p>The law of large numbers, when it works, works too slowly in the real
+world (this is more shocking than you think as it cancels most statistical estimators)</p></li>
+<li><p>The mean of the distribution will not correspond to the sample mean.<br />
+In fact, there is no fat tailed distribution in which the mean can be properly
+estimated directly from the sample mean,
+unless we have orders of magnitude more data than we do</p></li>
+<li><p>Standard deviations and variance are not useable. They fail out of sample.</p></li>
+<li><p>Beta, Sharpe Ratio and other common financial metrics
+are uninformative.</p></li>
+<li><p>Robust statistics is not robust at all.</p></li>
+<li><p>The so-called “empirical distribution” is not empirical
+(as it misrepresents the expected payoffs in the tails).</p></li>
+<li><p>Linear regression doesn’t work.</p></li>
+<li><p>Maximum likelihood methods work for parameters
+(good news). We can have plug in estimators in some
+situations.</p></li>
+<li><p>The gap between dis-confirmatory and confirmatory
+empiricism is wider than in situations covered by common
+statistics i.e. difference between absence of evidence and
+evidence of absence becomes larger.</p></li>
+<li><p>Principal component analysis is likely to produce false
+factors.</p></li>
+<li><p>Methods of moments fail to work. Higher moments are
+uninformative or do not exist.</p></li>
+<li><p>There is no such thing as a typical large deviation:
+conditional on having a large move, such move is not
+defined.</p></li>
+<li><p>The Gini coefficient ceases to be additive. It becomes
+super-additive. The Gini gives an illusion of large con-
+centrations of wealth. (In other words, inequality in a
+continent, say Europe, can be higher than the average
+inequality of its members).</p></li>
+</ol>
+<p>While it takes 30 observations in the Gaussian to stabilize
+the mean up to a given level,
+it takes <span class="math inline">\(10^{11}\)</span> observations in the Pareto to bring the sample error down
+by the same amount (assuming the mean exists).
+You cannot make claims about the stability of the sample
+mean with a fat tailed distribution. There are other ways to do
+this, but not from observations on the sample mean.</p>
+<p>We have known at least since Sextus Empiricus that we
+cannot rule out degeneracy but there are situations in which
+we can rule out non-degeneracy. If I see a distribution that
+has no randomness, I cannot say it is not random. That is,
+we cannot say there are no black swans. Let us now add
+one observation. I can now see it is random, and I can
+rule out degeneracy. I can say it is not not random. On the
+right hand side we have seen a black swan, therefore the
+statement that there are no black swans is wrong. This is the
+negative empiricism that underpins Western science. As we
+gather information, we can rule things out.
+If we see a 20 sigma event, we can rule out that the
+distribution is thin-tailed.</p>
+<p><em>Pareto - Scalability</em></p>
+<p>The intuition behind the Pareto Law. It is simply defined as:
+say X is a random variable.
+For x sufficently large, the probability of exceeding 2x divided by the
+probability of exceeding x is no different from the probability
+of exceeding 4x divided by the probability of exceeding 2x,
+and so forth.</p>
+<p>So if we have a Pareto (or Pareto-style) distribution, the ratio
+of people with £16 million compared to £8 million is the same
+as the ratio of people with £2 million and £1 million. There
+is a constant inequality.</p>
+<p>This distribution has no characteristic
+scale which makes it very easy to understand. Although this
+distribution often has no mean and no standard deviation we
+still understand it. But because it has no mean we have to
+ditch the statistical textbooks and do something more solid,
+more rigorous.</p>
+<p>A Pareto distribution has no higher moments: moments
+either do not exist or become statistically more and more
+unstable.</p>
+<p>In 2009 I took 55 years of data and
+looked at how much of the kurtosis (a function of the fourth
+moment) came from the largest observation. For
+a Gaussian the maximum contribution over the same time span
+should be around .008 ± .0028. For the S&amp;P 500 it was about
+80 per cent. This tells us that we dont know anything about
+kurtosis. Its sample error is huge; or it may not exist so the
+measurement is heavily sample dependent. If we dont know
+anything about the fourth moment, we know nothing about the
+stability of the second moment. It means we are not in a class
+of distribution that allows us to work with the variance, even
+if it exists. This is finance.</p>
+<p>We cannot use standard statistical methods with financial data.</p>
+<p>Financial data, debunks all the college textbooks we are currently using
+Econometrics that deals with squares goes out of the window.
+The variance of the squares is analogous to the fourth moment.
+The variance of the squares is analogous to the fourth moment.
+We do not know the variance. But we can work very easily
+with Pareto distributions. They give us less information, but
+nevertheless, it is more rigorous if the data are uncapped or if
+there are any open variables.</p>
+<p>Principal component analysis is a dimension
+reduction method for big data and it works beautifully with
+thin tails. But if there is not enough data there is an illusion
+of a structure. As we increase the data (the n variables),
+the structure becomes flat.</p>
+<p><em>Lessons:</em></p>
+<p>Once we know something is fat-tailed, we can use heuristics to see
+how an exposure there reacts to random events: how much
+is a given unit harmed by them. It is vastly more effective
+to focus on being insulated from the harm of random events
+than try to figure them out in the required details (as we saw
+the inferential errors under fat tails are huge). So it is more
+solid, much wiser, more ethical, and more effective to focus on
+detection heuristics and policies rather than fabricate statistical
+properties.</p>
+<p>The beautiful thing we discovered is that everything that is
+fragile has to present a concave exposure similar –if not
+identical –to the payoff of a short option, that is, a negative
+exposure to volatility. It is nonlinear, necessarily. It has to
+have harm that accelerates with intensity, up to the point of
+breaking. If I jump 10m I am harmed more than 10 times than
+if I jump one metre. That is a necessary property of fragility.</p>
+<p>We just need to look at acceleration in the tails. We have built
+effective stress testing heuristics based on such an option-like
+property.</p>
+<p>In the real world we want simple things that work;
+we want to impress our accountant and not our peers. (My
+argument in the latest instalment of the Incerto, Skin in the
+Game is that systems judged by peers and not evolution rot
+from overcomplication). To survive we need to have clear
+techniques that map to our procedural intuitions.</p>
+<p>The new focus is on how to detect and measure convexity and concavity.
+This is much, much simpler than probability.</p>
+<p><a href="/pdf/Taleb_2017_Extremes_DarwinCollege.pdf">Taleb (2017) Darwin Colleges(pdf)</a></p>
+</div>
+<div id="statistical-consequences-of-fat-tails" class="section level3" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Statistical Consequences of Fat Tails</h3>
+<blockquote>
+<p>Conventional statistics fail to cover fat tails;
+physicists who use power laws do not usually produce statistical estimators.</p>
+</blockquote>
+<p><a href="https://www.fooledbyrandomness.com/FatTails.html">Taleb’s Research Site</a></p>
+<blockquote>
+<p>Take nothing for granted - <em>It is what it is.</em>
+Another 300 years of data is required to test a statistical hypothesis.
+A dataset has no variance.
+A distribution’s standard deviation will not converge in a lifetime’s worth of data.</p>
+</blockquote>
+<p>Fat tailed random variables challenge our conceptions of mean and standard deviation.
+Linear regression also breaks under fat tails.
+The convincing case is made that power law distributions should be the default
+for modeling data rather than the thin-tailed Normal distribution.</p>
+<p>Any distribution with more density in the tails than the Normal distribution
+is said to have thick tails.
+This corresponds to raw kurtosis &gt; 3.
+The tail density needs to decay slower than Normal, <span class="math inline">\(\frac{-x^2}{e^{2\sigma^2}}\)</span>.</p>
+<p>Fat tailed distributions are the thickest tailed distributions.
+The power law is an example of this -
+they’re the distributions with so much additional density in their tails
+that moments <span class="math inline">\(E[X^p]\)</span> are no longer finite.</p>
+<div id="power-law-distributions" class="section level4" number="2.1.3.1">
+<h4><span class="header-section-number">2.1.3.1</span> Power Law Distributions</h4>
+<div id="pareto-distribution" class="section level5" number="2.1.3.1.1">
+<h5><span class="header-section-number">2.1.3.1.1</span> Pareto Distribution</h5>
+<p>Pareto discovered that 20% percent of taxpayers had 80% of the income across countries in Europe.
+One parameter of the Pareto power law distribution is α, which is known as the <em>tail index</em>.
+Pareto’s 80-20 example corresponds to α = 1.16.
+The tail index describes the behavior of density decay in the tail, as its name implies.</p>
+<p>The strange thing about power law distributions is that, depending on the tail index α,
+some of its moments may not exist or be infinite.
+There is no finite mean if α &lt; 1,
+and there is no finite variance if α &lt; 2.
+The same applies for skewness at α &lt; 3 and kurtosis when α &lt; 4, and so on.
+The tails get thicker as α gets smaller.</p>
+<p>Pseudo-convergence: A tail index less than 2 doesn’t mean that we can’t compute the sample variance of dataset. Rather, betting on the stability of the variance is unwise because this sample variance will never converge, and can in fact “spike” at any time. Furthermore, if the 4th moment (kurtosis) doesn’t exist, this may imply unbearably slow convergence of the 2nd moment (variance).</p>
+<p>The Central Limit Theorem, which is typically very useful for sums and averages, requires a finite variance, so tail indices α &lt; 2 do not obey. The assumption for the analytic Black-Scholes-Merton price for a financial option - that the random walk sum of movements converges to the Normal distribution - is also violated, so that breaks too. If the tail index is slightly over 2, it will converge to the Normal in the limit, but very slowly.</p>
+<p><em>Tail events</em> - the unlikely events of the atypically large magnitude - are the most indicative of the tail behavior. But these tail events are rare. Without a deep understanding of the underlying process which has generated these samples, it can be tough to rule out that the data was generated by a power law. In this sense, we might consider that “most” processes are fat tailed by default - or, we should at least assume they are until we have enough quantitative or qualitative data to prove otherwise.</p>
+<p><a href="https://gelman.me/scoft.html">Review of Taleb (Gelman)</a></p>
+</div>
+</div>
+</div>
+<div id="pandemic-risk-management" class="section level3" number="2.1.4">
+<h3><span class="header-section-number">2.1.4</span> Pandemic Risk Management</h3>
+<p><em>Non-Ergodic</em></p>
+<p><em>Paranoia or Nothing</em></p>
+<p>Taleb and collegues have som very interesting methodological
+remarks in the early stages of the COVID-19 outbreak:</p>
+<blockquote>
+<p>Clearly, we are dealing with an extreme fat-tailed process
+owing to an increased connectivity, which increases the
+spreading in a nonlinear way. Fat tailed processes
+have special attributes, making conventional risk-management
+approaches inadequate</p>
+</blockquote>
+<blockquote>
+<p>The general (non-naive) precautionary principle delin-
+eates conditions where actions must be taken to reduce risk
+of ruin, and traditional cost-benefit analyses must not be used.
+These are ruin problems where, over time, exposure to tail
+events leads to a certain eventual extinction. While there
+is a very high probability for humanity surviving a single
+such event, over time, there is eventually zero probability of
+surviving repeated exposures to such events. While repeated
+risks can be taken by individuals with a limited life expectancy,
+ruin exposures must never be taken at the systemic and
+collective level. In technical terms, the precautionary principle
+applies when traditional statistical averages are invalid because
+risks are not ergodic.</p>
+</blockquote>
+<blockquote>
+<p>Historically based estimates of spreading
+rates for pandemics in general, and for the current one in
+particular, underestimate the rate of spread because of the
+rapid increases in transportation connectivity over recent years.
+This means that expectations of the extent of harm are under-
+estimates both because events are inherently fat tailed, and
+because the tail is becoming fatter as connectivity increases</p>
+</blockquote>
+<blockquote>
+<p>Estimates of the virus’s reproductive
+ratio <span class="math inline">\(R\_{0}\)</span> —the number of cases one case generates on average
+over the course of its infectious period in an otherwise
+uninfected population—are biased downwards. This property
+comes from fat-tailedness due to individual ‘superspreader’
+events. Simply,<span class="math inline">\(R\_{0}\)</span> is estimated from an average which takes
+longer to converge as it is itself a fat-tailed variable.</p>
+</blockquote>
+<p><a href="https://necsi.edu/systemic-risk-of-pandemic-via-novel-pathogens-coronavirus-%20a-note">Norman/Bar-Yam/Taleb Note</a>
+<a href="/pdf/Joseph_Norman_2020_Systemic_Risk_of_Pandemic_via_Novel_Pathogenes.pdf">(pdf)</a></p>
+</div>
+<div id="danish-mask-study" class="section level3" number="2.1.5">
+<h3><span class="header-section-number">2.1.5</span> Danish Mask Study</h3>
+<p>Every study needs its own statistical tools, adapted to the specific problem, which is why it is a good practice to require that statisticians come from mathematical probability rather than some software-cookbook school. When one uses canned software statistics adapted to regular medicine (say, cardiology), one is bound to make severe mistakes when it comes to epidemiological problems in the tails or ones where there is a measurement error. The authors of the study discussed below (The Danish Mask Study) both missed the effect of false positive noise on sample size and a central statistical signal from a divergence in PCR results.
+<strong>A correct computation of the odds ratio shows a massive risk reduction coming from masks.</strong></p>
+<p>The article by Bundgaard et al., [“Effectiveness of Adding a Mask Recommendation to Other Public Health Measures to Prevent SARS-CoV-2 Infection in Danish Mask Wearers,” Annals of Internal Medicine (henceforth the “Danish Mask Study”)] relies on the standard methods of randomized control trials to establish the difference between the rate of infections of people wearing masks outside the house v.s. those who don’t (the control group), everything else maintained constant.
+The authors claimed that they calibrated their sample size to compute a p-value (alas) off a base rate of 2% infection in the general population.
+The result is a small difference in the rate of infection in favor of masks (2.1% vs 1.8%, or 42/2392 vs. 53/2470), deemed by the authors as not sufficient to warrant a conclusion about the effectiveness of masks.</p>
+<p><em>Taleb’s Points:</em></p>
+<blockquote>
+<p>The Mask Group has 0/2392 PCR infections vs 5/2470 for the Control Group. Note that this is the only robust result and the authors did not test to see how nonrandom that can be. They missed on the strongest statistical signal. (One may also see 5 infections vs. 15 if, in addition, one accounts for clinically detected infections.)</p>
+</blockquote>
+<blockquote>
+<p>The rest, 42/2392 vs. 53/2470, are from antibody tests with a high error rate
+which need to be incorporated via propagation of uncertainty-style methods
+on the statistical significance of the results.
+Intuitively a false positive rate with an expected “true value” <span class="math inline">\(p\)</span>
+is a random variable <span class="math inline">\(\rightarrow\)</span> Binomial Distribution with STD <span class="math inline">\(\sqrt{n p (1-p)}\)</span></p>
+</blockquote>
+<blockquote>
+<p>False positives must be deducted in the computation of the odds ratio.</p>
+</blockquote>
+<blockquote>
+<p><strong>The central problem is that both p and the incidence of infection are in the tails!</strong></p>
+</blockquote>
+<blockquote>
+<p>As most infections happen at home, the study does not inform on masks in general –it uses wrong denominators for the computation of odds ratios (mixes conditional and unconditional risk). Worse, the study is not even applicable to derive information on masks vs. no masks outside the house since during most of the study (April 3 to May 20, 2020), “cafés and restaurants were closed “, conditions too specific and during which the infection rates are severely reduced –tells us nothing about changes in indoor activity. (The study ended June 2, 2020). A study is supposed to isolate a source of risk; such source must be general to periods outside the study (unlike cardiology with unconditional effects).</p>
+</blockquote>
+<blockquote>
+<p>The study does not take into account the fact that masks might protect others. Clearly this is not cardiology but an interactive system.</p>
+</blockquote>
+<blockquote>
+<p>Statistical signals compound. One needs to input the entire shebang, not simple individual tests to assess the joint probability of an effect.</p>
+</blockquote>
+<p><em>Comment from Tom Wenseleers</em>
+For the 5 vs 0 PCR positive result the p value you calculate is flawed. The correct way to do it would e.g. be using a Firth logistic regression. Using R that would give you:</p>
+<p>library(brglm)
+summary(brglm(cbind(pcrpos, pcrneg) ~ treatment, family=binomial, data=data.frame(treatment=factor(c(“masks,””nomasks”)),
+pcrpos=c(0,5), pcrneg=c(2392,2470-5))))</p>
+<p>2-sided p=0.11.
+So that’s not significantly different.</p>
+<p>Alternatively, you might use a Fisher’s exact test, which would give you :</p>
+<p>fisher.test(cbind(c(0,2392),c(5,2470-5))):</p>
+<p>2-sided p = 0.06.
+Again, not significantly different.</p>
+<p>A Firth logistic regression would be more appropriate though, since we have a clear outcome variable here and we don’t just want to test for an association in a 2×2 contingency table, as one would do using a Fisher’s exact test. For details see Firth, D. (1993). Bias reduction of maximum likelihood estimates. Biometrika 80, 27–38. A regular logistic regression doesn’t work here btw because of complete separation, <a href="https://en.wikipedia.org/wiki/Separation_(statistics)" class="uri">https://en.wikipedia.org/wiki/Separation_(statistics)</a> <a href="https://stats.stackexchange.com/questions/11109/how-to-deal-with-perfect-separation-in-logistic-regression" class="uri">https://stats.stackexchange.com/questions/11109/how-to-deal-with-perfect-separation-in-logistic-regression</a>. Going Bayesian would also be a solution, e.g. using the bayesglm() or brms package, or one could use an L1 or L2 norm or elastic net penalized binomial GLM model, e.g. using glmnet.</p>
+<p>But the p value you calculate above is definitely not correct. Sometimes it helps to not try to reinvent the wheel.</p>
+<p>The derivation of Fisher’s exact test you can find in most Statistics 101 courses, see e.g. <a href="https://mathworld.wolfram.com/FishersExactTest.html" class="uri">https://mathworld.wolfram.com/FishersExactTest.html</a>. For Firth’s penalized logistic regression, see <a href="https://medium.com/datadriveninvestor/firths-logistic-regression-classification-with-datasets-that-are-small-imbalanced-or-separated-49d7782a13f1" class="uri">https://medium.com/datadriveninvestor/firths-logistic-regression-classification-with-datasets-that-are-small-imbalanced-or-separated-49d7782a13f1</a> for a derivation. Or in Firth’s original article: <a href="https://www.jstor.org/stable/2336755?seq=1#metadata_info_tab_contents" class="uri">https://www.jstor.org/stable/2336755?seq=1#metadata_info_tab_contents</a>.</p>
+<p>Technically, the problem with the way you calculated your p value above is that you use a one-sample binomial test, and assume there is no sampling uncertainty on the p=5/2470. Which is obviously not correct. So you need a two-sample binomial test instead, which you could get via a logistic regression. But since you have complete separation you then can’t use a standard binomial GLM, and have to use e.g. a Firth penalized logistic regression instead. Anyway, the details are in the links above.</p>
+<p>You write “The probability of having 0 realizations in 2392
+if the mean is <span class="math inline">\(\frac{5}{2470}\)</span> is 0.0078518, that is 1 in 127.
+We can reexpress it in p values, which would be &lt;.01.”
+This statement is obviously not correct then.</p>
+<p>And if you didn’t do p values – well, then your piece above is a little weak as a reply on how the authors should have done their hypothesis testing in a proper way, don’t you think? If the 0 vs 5 PCR positive result is not statistically significant I don’t see how you can make a sweeping statement like “The Mask Group has 0/2392 PCR infections vs 5/2470 for the Control Group. Note that this is the only robust result and the authors did not test to see how nonrandom that can be. They missed on the strongest statistical signal.” That “strong statistical signal” you mention turns out not be statistically significant at the p&lt;0.05 level if you do your stats properly…</p>
+<p>Taleb:You are conflating p values and statistical significance.
+Besides, I don’t do P values. <a href="https://arxiv.org/pdf/1603.07532.pdf" class="uri">https://arxiv.org/pdf/1603.07532.pdf</a></p>
+<p>you can also work with Bayes Factors if you like. Anything more formal than what you have above should do really… But just working with a PMF of a binomial distribution, and ignoring the sampling error on the 5/2470 control group is not OK. And if you’re worried about the accuracy of p values you could always still calculate 95% confidence limits on them, right? Also not really what people would typically consider p-hacking…</p>
+<p>Your title may a bit of a misnomer then. And as I mentioned: if one is worried about the accuracy of your p values &amp; stochasticity on its estimated value, you can always calculate p-value prediction intervals, <a href="https://royalsocietypublishing.org/doi/10.1098/rsbl.2019.0174" class="uri">https://royalsocietypublishing.org/doi/10.1098/rsbl.2019.0174</a>.</p>
+<p>You are still ignoring the sampling uncertainty on the 0/2392. If you would like to go Monte Carlo you can use an exact-like logistic regression (<a href="https://www.jstatsoft.org/article/view/v021i03/v21i03.pdf" class="uri">https://www.jstatsoft.org/article/view/v021i03/v21i03.pdf</a>). Using R, that gives me</p>
+<p>For the 0 vs 5 PCR positive result:
+library(elrm)
+set.seed(1)
+fit = elrm(pcrpos/n ~ treatment, ~ treatment,
+r=2, iter=400000, burnIn=1000,
+dataset=data.frame(treatment=factor(c(“masks,” “control”)), pcrpos=c(0, 5), n=c(2392, 2470)) )
+fit<span class="math inline">\(p.values # p value = 0.06, ie just about not significant at the 0.05 level fit\)</span>p.values.se # standard error on p value = 0.0003
+# this is very close to the 2-sided Fisher exact test p value
+fisher.test(cbind(c(0,2392), c(5,2470-5))) # p value = 0.06</p>
+<p>For the 0 vs 15 result:
+set.seed(1)
+fit = elrm(pcrpos/n ~ treatment, ~ treatment,
+r=2, iter=400000, burnIn=1000,
+dataset=data.frame(treatment=factor(c(“masks,” “control”)), pos=c(5, 15), n=c(2392, 2470)) )
+fit<span class="math inline">\(p.values # p value = 0.04 – this would be just about significant at the 0.05 level fit\)</span>p.values.se # standard error on p value = 0.0003</p>
+<p>So some evidence for the opposite conclusions as what they have (especially for the 5 vs 15 result), but still not terribly strong.</p>
+<p>Details of method are in <a href="https://www.jstatsoft.org/article/view/v021i03/v21i03.pdf" class="uri">https://www.jstatsoft.org/article/view/v021i03/v21i03.pdf</a>.</p>
+<p>I can see you don’t like canned statistics. And you could recode these kinds of methods quite easily in Mathematica if you like, see here for a Fisher’s exact test e.g.:
+<a href="https://mathematica.stackexchange.com/questions/41450/better-way-to-get-fisher-exact" class="uri">https://mathematica.stackexchange.com/questions/41450/better-way-to-get-fisher-exact</a>.</p>
+<p>But believe me – also Sir Ronald Fisher will have thought long and hard about these kinds of problems. And he would have seen in seconds that what you do above is simply not correct. Quite big consensus on that if I read the various comments here by different people…</p>
+<p>I was testing the hypothesis of there being no difference in infection rate between both groups and so was doing 2-sided tests. Some have argued that masks could actually make things worse if not used properly. So not doing a directional test would seem most objective to me. But if you insist, then yes, you could use 1-tailed p values… Then you would get 1-sided p values of 0.03 and 0.02 for the 0 vs 5 and 5 vs 15 sections of the data. Still deviates quite a bit from the p&lt;0.01 that you first had.</p>
+<p>In terms of double column joint distribution: then I think your code above should have e.g. 15/2470 and 5/2392 as your expectation of the Bernoulli distribution for vs 5 vs 15 comparison. But that would give problems for the 0/2392 outcome for the masks group in the 0 vs 5 comparison. As simulated Bernouilli trials with p=0 will be all zeros. Also, right now I don’t see where that 2400 was coming from in your code. I get that you are doing a one-sided two-sample binomial test here via a MC approach. That’s not the same than a Fisher exact test though.</p>
+<p><em>Andreas:</em>
+Weird, the last part of my comment above apparently got chopped up somehow. Ignore the CI calculations as they got messed up, but are trivial. Trying again with the text that got lost, containing my main point:</p>
+<p>So the false positive-adjusted Odds Ratio is .71 [95% CI .41, 1.21], using the same model as the authors of the paper did. This can be compared to their reported OR = .82 [95% CI .54, 1.23].</p>
+<p>Even with my quite conservative adjustment, the only robust finding claimed in the paper is not robust anymore – the estimated risk reduction is no longer significantly lower than 50%, according to the same standard logistic model used by the authors. Nor is it sig. larger than 0%. The CI did not really improve over the unadjusted one (maybe this was obvious a priori, but not to me). Either way I think .71 is a better estimate than the .82 that was reported in the paper, based on Nassim’s reasoning about the expected false positives. And .71 vs. .82 might well have crossed the line for a mask policy to be seriously considered, by some policymaker who rejected .82 as too close to 1.</p>
+<p>Sensitivity analysis of the FPR adjustment:
+1% FPR (Nassim’s suggestion from the blog post) =&gt; OR = .66 [95% CI .36, 1.19]
+.5% FPR (lower estimate from the Bundgaard et al. paper, based on a previous study) =&gt; OR = .76 [95% CI .47, 1.22]</p>
+<p><em>Tom</em></p>
+<p>I do agree with all the shortcomings of this study in general though. It certainly was massively underpowered.</p>
+<p><em>Other comments:</em></p>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/33205991/">Bundgaard (2020) Effectiveness of Adding Mask</a>
+<a href="pdf/Bundgaard_2020_Mask_Effectiveness_ref_Taleb.pdf">(pdf)</a></p>
+<p><a href="https://fooledbyrandomnessdotcom.wordpress.com/2020/11/25/hypothesis-testing-in-the-presence-of-false-positives-the-flaws-in-the-danish-mask-study/">Taleb Review of Bundgaard</a></p>
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2938757/">Odd’s Ratio Explained (NIH)</a></p>
+<p><em>Composite Endpoints:</em></p>
+<p>Composite endpoints in clinical trials are composed of primary endpoints that contain two or more distinct component endpoints. The purported benefits include increased statistical efficiency, decrease in sample-size requirements, shorter trial duration, and decreased cost. However, the purported benefits must be diligently weighed against the inherent challenges in interpretation. Furthermore, the larger the gradient in importance, frequency, or results between the component endpoints, the less informative the composite endpoint becomes, thereby decreasing its utility for medical-decision making.</p>
+<p>[Composite Endpoints (NIH)] (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6040910/" class="uri">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6040910/</a>)</p>
+<p><a href="https://en.wikipedia.org/wiki/Separation_(statistics)">Separation (Wikipedia)</a></p>
+
+</div>
+<div id="quarantine-fatigue-thins-fat-tailed-impacts" class="section level3" number="2.1.6">
+<h3><span class="header-section-number">2.1.6</span> Quarantine fatigue thins fat-tailed impacts</h3>
+<p><em>Abstract Conte:</em></p>
+<p>Fat-tailed damages across disease outbreaks limit the
+ability to learn and prepare for future outbreaks,
+as the central limit theorem slows down and fails
+to hold with infinite moments.</p>
+<p>We demonstrate the emergence and persistence of fat tails in contacts across the U.S.
+We then demonstrate an interaction between these contact rate distributions
+and community-specific disease dynamics
+to create fat-tailed distributions of COVID-19 impacts
+(proxied by weekly cumulative cases and deaths) during the
+exact time when attempts at suppression were most intense.</p>
+<p>Our stochastic SIR model implies the effective reproductive number
+also follows a fat-tailed stochastic process and leads to multiple waves of
+cases with unpredictable timing and magnitude instead of a single noisy wave of cases
+found in many compartmental models
+that introduce stochasticity via an additively-separable error term.</p>
+<p>Public health policies developed based on experiences during these months
+could be viewed as an overreaction if these impacts were
+mistakenly perceived as thin tailed,
+possibly contributing to reduced compliance, regulation, and the quarantine fatigue.</p>
+<p>While fat-tailed contact rates associated with superspreaders increase transmission
+and case numbers, they also suggest a potential benefit: targeted policy
+interventions are more effective than they would be with thin-tailed contacts.</p>
+<p>If policy makers have access to the necessary information and a mandate to act decisively,
+they might take advantage of fat-tailed contacts
+to prevent inaction that normalizes case and death counts that
+would seem extreme early in the outbreak.</p>
+<p>Our place-based estimates of contacts aid in these efforts by showing
+the dynamic nature of movement through communities as the outbreak progresses,
+which is quite costly to achieve in network models,
+forcing the assumption of static contact networks in many models.</p>
+<p>In extreme value theory, fat tails confound efforts to prepare for future extreme events
+like natural disasters and violent conflicts because
+experience does not provide reliable information about future tail draws.
+However, impacts of extreme events play out over time based on policy and
+behavioral responses to the event,
+which are themselves dynamically informed by past experiences.</p>
+<p>A general pattern of fat-tailed contact rate distributions across the U.S.
+suggests that fat tails in U.S. cases observed early in the outbreak
+are due to city- and county-specific contact networks and epidemiological dynamics.</p>
+<p>By unpacking the dynamics that lead to the impacts of extreme events, we show that
+1) fat-tailed impacts can also confound efforts to control and manage impacts
+in the midst of extreme events and
+2) thin tails in disease impacts are not necessarily desirable,
+if they indicate an inevitable catastrophe.</p>
+<p><a href="https://www.medrxiv.org/content/10.1101/2021.01.07.21249366v1">Conte (2021) Quarantine fatigue thins fat-tailed coronavirus impacts</a>
+<a href="pdf/Conte_2021_Fat-tailed_Corona.pdf">(pdf)</a>
+<a href="pdf/Conte_2021_Fat-tailed_Corona_SM.pdf">(pdf - SM)</a></p>
+</div>
+<div id="herd-immunity-impossible-with-new-mutants" class="section level3" number="2.1.7">
+<h3><span class="header-section-number">2.1.7</span> Herd Immunity impossible with new Mutants</h3>
+<p>Professor of vaccinology Shabir Madhi at the University of the Witwatersrand says protecting at-risk individuals against severe Covid is more important than herd immunity</p>
+<p>Leading vaccine scientists are calling for a rethink of the goals of vaccination programmes, saying that herd immunity through vaccination is unlikely to be possible because of the emergence of variants like that in South Africa.</p>
+<p>The comments came as the University of Oxford and AstraZeneca acknowledged that their vaccine will not protect people against mild to moderate Covid illness caused by the South African variant.</p>
+<p>Novavax and Janssen, which were trialled there in recent months and were found to have much reduced protection against the variant – at about 60%. Pfizer/BioNTech and Moderna have also said the variant affects the efficacy of their vaccines, although on the basis of lab studies only.</p>
+<p>These findings recalibrate thinking about how to approach the pandemic virus and shift the focus from the goal of herd immunity against transmission to the protection of all at-risk individuals in the population against severe disease.</p>
+<p>We probably need to switch to protecting the vulnerable, with the best vaccines we have which, although they don’t stop infection, they probably do stop you dying.</p>
+<p><a href="https://www.theguardian.com/society/2021/feb/07/scientists-call-for-rethink-as-doubts-grow-about-achieving-herd-immunity">Vaccine vs New Mutants (Guardian)</a></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="entropy.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/dyrehaugen/rvar/edit/master/101-statististics.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["rvar.pdf", "rvar.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
