@@ -4,6 +4,8 @@ social-architecture---ian-wright
 information-entropy---shannon
 complexity
 wicked-problems
+predicting-collapse
+complexity-theory-and-financial-regulation
 evolution
 organization-of-life
 intentional-evolution
