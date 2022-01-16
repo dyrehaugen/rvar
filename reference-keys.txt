@@ -6,6 +6,7 @@ complexity
 wicked-problems
 predicting-collapse
 complexity-theory-and-financial-regulation
+holobiont
 evolution
 organization-of-life
 intentional-evolution
@@ -22,6 +23,10 @@ kropotkins-evolutionary-holism
 history
 personalities
 jimmy-carter
+law
+earth-system-law
+hydrological-cycle
+sustainabilty-transition
 asteroids
 antifragile-therapy
 optimal-cancer-treatment
@@ -43,9 +48,11 @@ mrna
 academia
 academic-snobbery
 academic-publishing
+professionalism
 belgium
 china
 economic-governance
+decentralization
 columbia
 macroeconomic-policy
 england
