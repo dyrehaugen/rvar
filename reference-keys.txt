@@ -7,6 +7,9 @@ wicked-problems
 predicting-collapse
 complexity-theory-and-financial-regulation
 holobiont
+science
+reductionism
+enligthenment
 evolution
 organization-of-life
 intentional-evolution
@@ -28,6 +31,7 @@ earth-system-law
 hydrological-cycle
 sustainabilty-transition
 asteroids
+brain-and-mind
 antifragile-therapy
 optimal-cancer-treatment
 consciousness
@@ -41,6 +45,7 @@ pandemics
 origins-of-sars2
 how-the-west-lost-covid
 pantent-protection-waiver
+patents
 quantum-mechanics
 many-world-interpretation
 vaccines
