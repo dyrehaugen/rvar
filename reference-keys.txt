@@ -22,9 +22,16 @@ hegel
 science-of-logic
 marxism
 transformation-problem
+marx-durability
 socialism
 anarchism
 kropotkins-evolutionary-holism
+democracy
+liberalism
+how-liberalism-fails
+fascism
+fourteen-steps-to-fascism-eco
+liberalism-breeds-fascism
 history
 personalities
 jimmy-carter
@@ -43,6 +50,7 @@ energy-empires
 fertility
 mathematics
 riemann-zeta-function
+wolframs-ruliad
 pandemics
 origins-of-sars2
 how-the-west-lost-covid
@@ -57,6 +65,7 @@ academic-snobbery
 academic-publishing
 professionalism
 geopolitics
+post-westphalian-order
 eur-asian-primacy
 belgium
 china
