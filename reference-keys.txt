@@ -94,6 +94,8 @@ finland
 israel
 nicaragua
 sweden
+usa
+kissingers-legacy
 about
 links
 news
