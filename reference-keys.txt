@@ -17,6 +17,7 @@ reductionism
 enligthenment
 scale
 is-science-becoming-less-disruptive
+is-economics-a-science
 evolution
 organization-of-life
 intentional-evolution
@@ -54,6 +55,7 @@ asteroids
 brain-and-mind
 antifragile-therapy
 optimal-cancer-treatment
+civilization
 consciousness
 crime
 free-will
