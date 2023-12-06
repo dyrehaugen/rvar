@@ -24,6 +24,7 @@ intentional-evolution
 metabolic-scaling
 hiarchies
 philosophy
+cartesian-disconnect
 agency
 hegel
 science-of-logic
@@ -94,6 +95,7 @@ denmark
 england
 finland
 israel
+gaza-war
 nicaragua
 sweden
 usa
