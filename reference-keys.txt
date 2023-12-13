@@ -18,6 +18,7 @@ enligthenment
 scale
 is-science-becoming-less-disruptive
 is-economics-a-science
+science-in-at-networked-economy
 evolution
 organization-of-life
 intentional-evolution
