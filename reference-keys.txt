@@ -102,6 +102,7 @@ nicaragua
 sweden
 usa
 kissingers-legacy
+new-confederacy
 about
 links
 news
