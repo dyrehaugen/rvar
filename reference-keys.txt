@@ -10,6 +10,8 @@ wicked-problems
 predicting-collapse
 complexity-theory-and-financial-regulation
 holobiont
+medicine
+biobots
 science
 reticence-and-gradualism
 dualism
@@ -100,6 +102,8 @@ finland
 israel
 gaza-war
 nicaragua
+palestine
+oslo-accords
 sweden
 usa
 kissingers-legacy
