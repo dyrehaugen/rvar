@@ -22,6 +22,7 @@ scale
 is-science-becoming-less-disruptive
 is-economics-a-science
 science-in-at-networked-economy
+ai---private-science
 evolution
 organization-of-life
 intentional-evolution
@@ -102,11 +103,14 @@ england
 finland
 israel
 gaza-war
+zionism
+evilness
 nicaragua
 palestine
 oslo-accords
 sweden
 usa
+the-lack-of-american-ideology
 kissingers-legacy
 new-confederacy
 about
