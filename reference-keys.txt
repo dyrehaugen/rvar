@@ -64,6 +64,7 @@ brain-and-mind
 antifragile-therapy
 optimal-cancer-treatment
 civilization
+fermi-paradox-and-drake-equation
 consciousness
 crime
 free-will
